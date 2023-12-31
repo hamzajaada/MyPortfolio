@@ -1,0 +1,55 @@
+ 
+ 
+ /* Table of content : 
+ 1 - left section 
+ 2- animation
+
+ */
+ section.Hero{
+    margin-top: 3rem;
+ }
+ /* Left section */
+ section.Hero .parent-avatar{
+    align-items: end;
+    gap: 0.6rem;
+ }
+ section.Hero .left-section{
+    flex-grow: 1;
+ }
+ section.Hero .icon-verified{
+    color: var(--blue);
+    font-size: 1.1rem;
+ }
+ section.Hero .avatar{
+    width: 188px;
+    border: 1px solid darkorange;
+    padding: 2px;
+    box-shadow: 2px 3px 40px gray inset;
+    border-radius: 50%;
+ }
+section.Hero h1.title{
+   font-size: 2.85rem;
+   line-height: 3.3rem;
+   margin: 24px 0;
+   color :var(--title);
+}
+section.Hero p.sub-title{
+   color: var(--subtitle);
+   font-size: 0.9rem;
+   line-height: 1.65rem;
+   margin-bottom: 32px;
+}
+ section.Hero .all-icons{
+   font-size: 1.2rem;
+   gap: 1.5rem;
+   color: var(--subtitle);
+ }
+ section.Hero .all-icons .icon:hover{
+   font-size: 1.3rem;
+   transition: 1.3s;
+   gap: 1.5rem;
+   color: var(--subtitle);
+   cursor: pointer;
+   color: var(--icon-hover);
+ }
+ /* Animation */

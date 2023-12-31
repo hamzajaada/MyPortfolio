@@ -1,0 +1,113 @@
+ /* Table of content :
+  1 - Design Header :
+  2- Icone button :
+  3 - Media Screen :
+ */
+ /*  1 - Design Header : */
+ header ul{
+    gap: 16px;
+ }
+ header ul li a{
+    color: var(--title);
+    opacity: 0.9;
+    font-size: 0.88rem;
+    font-weight: 500;
+
+  }
+  header ul li a:hover{
+    color: var(--blue);
+    opacity: 1;
+    font-size: 0.9rem;
+    font-weight: 500;
+
+  }
+  header{
+    justify-content: space-between;
+    padding:0 2.4rem ;
+    margin-top: 1.2rem;
+  }
+  header nav{
+    /*1rem = 16px*/
+    background-color:var(--bgHeader);
+    padding: 0.7rem 1.6rem;
+    border-radius: 55px;
+    box-shadow: 5px 7px 40px rgba(0, 0, 0, 0.292);
+  }
+  header .menu{
+    display: none;
+}
+
+header .fixed{
+  position: fixed;
+  z-index: 7;
+  inset: 0;
+  background-color: rgba(40, 40, 53, 0.737);
+  backdrop-filter: blur(8px);
+}
+@keyframes mymove {
+  0% {scale : 0;}
+  60% {scale: 1.2}
+  100% { scale : 1;}
+  
+}
+ ul.modal{
+  animation: mymove 0.7s 1 ;
+  width: 85%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 2rem;
+  border: 0.9px solid rgb(74, 73, 73);
+  border-radius: 1rem;
+  padding:1rem 2rem ;
+  background-color: var(--secodary);
+ }
+ ul.modal li{
+  border-bottom: 1px solid var(--border);
+  margin-bottom: 1rem;
+  padding-bottom: 1rem;
+ }
+ ul.modal li:last-child{
+  border-bottom: none;
+  margin-bottom: 1rem;
+ }
+
+ul.modal li:first-child {
+ text-align: right;
+ border-bottom: none;
+ padding-bottom: 0;
+ margin-bottom: 0;
+}
+/* 2- Icone button : */
+header .icon-menu , .mode{
+  background-color: var(--bgHeader);
+  height: 2.4rem;
+  width: 2.4rem;
+  text-align: center;
+  color : var(--subtitle);
+  justify-content: center;
+  border-radius: 50%;
+  border: 1px solid rgba(250, 128, 114, 0.145);
+}
+header .icon-menu:hover , button.mode:hover{
+  color : var(--title);
+  border: 1px solid orange;
+
+}
+.icon-close{
+  color : var(--subtitle);
+  font-size: 1.3rem;
+}
+.icon-close:hover{
+  color : salmon;
+  font-size: 1.5rem;
+}
+/* 3 - Media Screen : */
+  @media (max-width : 700px) {
+    div{color :white}
+    header.flex nav {
+      display:none;
+    }
+    header .menu{
+        display: block;
+    }
+  }
