@@ -1,6 +1,4 @@
 
-Bien sûr, voici une proposition plus détaillée pour étoffer votre idée avant de mettre votre portfolio sur GitHub :
-
 Portfolio personnel développé avec React.js
 Bienvenue sur mon portfolio personnel, un site web interactif conçu et développé avec React.js. Ce projet a pour but de présenter de manière dynamique mes compétences, projets et expériences professionnelles.
 
